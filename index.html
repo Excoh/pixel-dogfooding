@@ -36,6 +36,11 @@
     <!-- Your page content here -->
      <h1>Pixel Dogfooding</h1>
      <p>Testing out pixel dogfooding</p>
-     <button>Add to Cart</button>
+     <button onclick="addToCart()">Add to Cart</button>
+     <script>
+        function addToCart() {
+            fbq('track', 'AddToCart');
+        }
+     </script>
 </body>
 </html>
